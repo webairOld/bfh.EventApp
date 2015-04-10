@@ -14,6 +14,7 @@
 		033ED0101AD2C7BB00640C65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033ED00F1AD2C7BB00640C65 /* Images.xcassets */; };
 		033ED0131AD2C7BB00640C65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 033ED0111AD2C7BB00640C65 /* LaunchScreen.xib */; };
 		033ED01F1AD2C7BB00640C65 /* EventAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033ED01E1AD2C7BB00640C65 /* EventAppTests.swift */; };
+		03C043D71AD7A9F40037F252 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03C043D91AD7A9F40037F252 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,12 @@
 		033ED0181AD2C7BB00640C65 /* EventAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		033ED01D1AD2C7BB00640C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		033ED01E1AD2C7BB00640C65 /* EventAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAppTests.swift; sourceTree = "<group>"; };
+		03C043D11AD7A99D0037F252 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		03C043D21AD7A99D0037F252 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		03C043D31AD7A9A20037F252 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		03C043D41AD7A9A20037F252 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		03C043D81AD7A9F40037F252 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		03C043DA1AD7A9F60037F252 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				033ED0051AD2C7BB00640C65 /* Info.plist */,
+				03C043D91AD7A9F40037F252 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -176,8 +184,8 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				fr,
 			);
 			mainGroup = 033ECFF81AD2C7BB00640C65;
 			productRefGroup = 033ED0021AD2C7BB00640C65 /* Products */;
@@ -196,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				033ED00E1AD2C7BB00640C65 /* Main.storyboard in Resources */,
+				03C043D71AD7A9F40037F252 /* Localizable.strings in Resources */,
 				033ED0131AD2C7BB00640C65 /* LaunchScreen.xib in Resources */,
 				033ED0101AD2C7BB00640C65 /* Images.xcassets in Resources */,
 			);
@@ -244,6 +253,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				033ED00D1AD2C7BB00640C65 /* Base */,
+				03C043D11AD7A99D0037F252 /* de */,
+				03C043D31AD7A9A20037F252 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -252,8 +263,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				033ED0121AD2C7BB00640C65 /* Base */,
+				03C043D21AD7A99D0037F252 /* de */,
+				03C043D41AD7A9A20037F252 /* fr */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		03C043D91AD7A9F40037F252 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03C043D81AD7A9F40037F252 /* de */,
+				03C043DA1AD7A9F60037F252 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -409,6 +431,7 @@
 				033ED0241AD2C7BB00640C65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		033ED0251AD2C7BB00640C65 /* Build configuration list for PBXNativeTarget "EventAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +440,7 @@
 				033ED0271AD2C7BB00640C65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

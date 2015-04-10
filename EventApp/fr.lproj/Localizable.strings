@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  EventApp
+
+  Created by Christopher weber on 10.04.15.
+  Copyright (c) 2015 BFH. All rights reserved.
+*/
+
+"MyTestString" = "Test (Fr)";
