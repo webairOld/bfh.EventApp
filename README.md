@@ -1,2 +1,2 @@
-# bfh.EventApp
+# EventApp
 Event App for the BFH iOS class
