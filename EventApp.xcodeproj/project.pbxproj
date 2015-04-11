@@ -132,6 +132,7 @@
 			buildPhases = (
 				033ECFFD1AD2C7BB00640C65 /* Sources */,
 				033ECFFE1AD2C7BB00640C65 /* Frameworks */,
+				035EC1571AD940C500CB6E40 /* ShellScript */,
 				033ECFFF1AD2C7BB00640C65 /* Resources */,
 			);
 			buildRules = (
@@ -218,6 +219,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		035EC1571AD940C500CB6E40 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python ${PROJECT_DIR}/Scripts/update_strings.py ${PROJECT_DIR}/EventApp/de.lproj/Localizable.strings -s ${PROJECT_DIR}/EventApp -p ${PROJECT_NAME}\npython ${PROJECT_DIR}/Scripts/update_strings.py ${PROJECT_DIR}/EventApp/fr.lproj/Localizable.strings -s ${PROJECT_DIR}/EventApp -p ${PROJECT_NAME}";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		033ECFFD1AD2C7BB00640C65 /* Sources */ = {
