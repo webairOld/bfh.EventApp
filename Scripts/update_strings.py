@@ -4,11 +4,11 @@ import argparse
 import re
 from collections import OrderedDict
 
-parser = argparse.ArgumentParser(description='Update Localizable.strings file')
-parser.add_argument('localizable_file', metavar='Localizable.strings', help='Path to the Localizable.strings file')
-parser.add_argument('-e', '--encoding', help='Encoding of the Localizable.strings file', required=False, default='utf16')
-parser.add_argument('-s', '--source', help='Path to Source files', required=False, default='.')
-parser.add_argument('-p', '--project', help='Project Name', required=False, default='DefaultProject')
+parser = argparse.ArgumentParser(description='Update strings File for iOS & Mac OS X Projects based on genstrings. Supports Swift and Objective-C files.')
+parser.add_argument('localizable_file', metavar='Localizable.strings', help='Path to the project Localizable.strings file')
+parser.add_argument('-e', '--encoding', help='Encoding of the Localizable.strings file (Optional, default: \'utf16\')', required=False, default='utf16')
+parser.add_argument('-s', '--source', help='Path to Source files (Optional, default: \'.\')', required=False, default='.')
+parser.add_argument('-p', '--project', help='Project Name (Optional)', required=False, default='DefaultProject')
 args = parser.parse_args()
 
 LOCALIZABLE_FILE_ENCODING = args.encoding
