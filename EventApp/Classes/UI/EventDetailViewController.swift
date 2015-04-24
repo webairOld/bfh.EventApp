@@ -10,11 +10,12 @@ import UIKit
 
 class EventDetailViewController: UIViewController {
 
-    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var eventNameLabel: UILabel!
+    var eventName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.eventNameLabel.text = self.eventName
         // Do any additional setup after loading the view.
     }
 

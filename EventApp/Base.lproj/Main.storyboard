@@ -68,7 +68,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="titleLabel" destination="eLe-hM-HEg" id="Pr4-jJ-GbJ"/>
+                        <outlet property="eventNameLabel" destination="eLe-hM-HEg" id="Rzn-TJ-DBK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfJ-Ja-SME" userLabel="First Responder" sceneMemberID="firstResponder"/>

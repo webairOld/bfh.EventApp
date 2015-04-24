@@ -47,7 +47,7 @@ class EventTableViewController: UITableViewController {
     }
     
     override func tableView(tableView:UITableView, didSelectRowAtIndexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("showDetailEventSegue", sender: nil);
+        self.performSegueWithIdentifier("showDetailEventSegue", sender:data[didSelectRowAtIndexPath.row]);
     }
     /*
     // Override to support conditional editing of the table view.
@@ -84,14 +84,16 @@ class EventTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showDetailEventSegue" {
+            let eventDetail = segue.destinationViewController as! EventDetailViewController
+            eventDetail.eventName = sender as? String
+        }
     }
-    */
+    
 
 }
