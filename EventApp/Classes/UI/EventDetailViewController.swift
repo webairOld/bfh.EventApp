@@ -10,6 +10,8 @@ import UIKit
 
 class EventDetailViewController: UIViewController {
 
+    @IBOutlet var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

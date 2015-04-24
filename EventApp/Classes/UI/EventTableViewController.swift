@@ -45,7 +45,10 @@ class EventTableViewController: UITableViewController {
         cell.textLabel?.text = data[indexPath.row]
         return cell
     }
-
+    
+    override func tableView(tableView:UITableView, didSelectRowAtIndexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("showDetailEventSegue", sender: nil);
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

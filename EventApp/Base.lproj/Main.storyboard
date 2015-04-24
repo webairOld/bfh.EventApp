@@ -35,7 +35,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="X3s-WG-mTw"/>
                     <connections>
-                        <segue destination="iig-oE-WCw" kind="show" id="fot-2B-i0E"/>
+                        <segue destination="iig-oE-WCw" kind="show" identifier="showDetailEventSegue" id="fot-2B-i0E"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKL-Tm-dsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -53,8 +53,23 @@
                     <view key="view" contentMode="scaleToFill" id="6v6-q1-vaC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLe-hM-HEg">
+                                <rect key="frame" x="276" y="74" width="49" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eLe-hM-HEg" firstAttribute="top" secondItem="1x3-ee-YJN" secondAttribute="bottom" constant="10" id="tE4-be-kIW"/>
+                            <constraint firstAttribute="centerX" secondItem="eLe-hM-HEg" secondAttribute="centerX" id="tgN-CN-Zfc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="eLe-hM-HEg" id="Pr4-jJ-GbJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfJ-Ja-SME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
