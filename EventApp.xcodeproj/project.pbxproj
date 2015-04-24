@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		033ED0071AD2C7BB00640C65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033ED0061AD2C7BB00640C65 /* AppDelegate.swift */; };
-		033ED0091AD2C7BB00640C65 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033ED0081AD2C7BB00640C65 /* FirstViewController.swift */; };
-		033ED00B1AD2C7BB00640C65 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033ED00A1AD2C7BB00640C65 /* SecondViewController.swift */; };
 		033ED00E1AD2C7BB00640C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033ED00C1AD2C7BB00640C65 /* Main.storyboard */; };
 		033ED0101AD2C7BB00640C65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033ED00F1AD2C7BB00640C65 /* Images.xcassets */; };
 		033ED0131AD2C7BB00640C65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 033ED0111AD2C7BB00640C65 /* LaunchScreen.xib */; };
 		033ED01F1AD2C7BB00640C65 /* EventAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033ED01E1AD2C7BB00640C65 /* EventAppTests.swift */; };
+		037897241AE9FE2B001D8ED5 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037897231AE9FE2B001D8ED5 /* EventTableViewController.swift */; };
+		037897261AE9FE54001D8ED5 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037897251AE9FE54001D8ED5 /* EventDetailViewController.swift */; };
 		03C043D71AD7A9F40037F252 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03C043D91AD7A9F40037F252 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -31,14 +31,14 @@
 		033ED0011AD2C7BB00640C65 /* EventApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		033ED0051AD2C7BB00640C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		033ED0061AD2C7BB00640C65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		033ED0081AD2C7BB00640C65 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		033ED00A1AD2C7BB00640C65 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		033ED00D1AD2C7BB00640C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		033ED00F1AD2C7BB00640C65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		033ED0121AD2C7BB00640C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		033ED0181AD2C7BB00640C65 /* EventAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		033ED01D1AD2C7BB00640C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		033ED01E1AD2C7BB00640C65 /* EventAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAppTests.swift; sourceTree = "<group>"; };
+		037897231AE9FE2B001D8ED5 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		037897251AE9FE54001D8ED5 /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		03C043D11AD7A99D0037F252 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		03C043D21AD7A99D0037F252 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		03C043D31AD7A9A20037F252 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
@@ -86,9 +86,8 @@
 		033ED0031AD2C7BB00640C65 /* EventApp */ = {
 			isa = PBXGroup;
 			children = (
+				037897211AE9FD4C001D8ED5 /* Classes */,
 				033ED0061AD2C7BB00640C65 /* AppDelegate.swift */,
-				033ED0081AD2C7BB00640C65 /* FirstViewController.swift */,
-				033ED00A1AD2C7BB00640C65 /* SecondViewController.swift */,
 				033ED00C1AD2C7BB00640C65 /* Main.storyboard */,
 				033ED00F1AD2C7BB00640C65 /* Images.xcassets */,
 				033ED0111AD2C7BB00640C65 /* LaunchScreen.xib */,
@@ -121,6 +120,23 @@
 				033ED01D1AD2C7BB00640C65 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		037897211AE9FD4C001D8ED5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				037897221AE9FD4C001D8ED5 /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		037897221AE9FD4C001D8ED5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				037897231AE9FE2B001D8ED5 /* EventTableViewController.swift */,
+				037897251AE9FE54001D8ED5 /* EventDetailViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				033ED00B1AD2C7BB00640C65 /* SecondViewController.swift in Sources */,
+				037897261AE9FE54001D8ED5 /* EventDetailViewController.swift in Sources */,
 				033ED0071AD2C7BB00640C65 /* AppDelegate.swift in Sources */,
-				033ED0091AD2C7BB00640C65 /* FirstViewController.swift in Sources */,
+				037897241AE9FE2B001D8ED5 /* EventTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
