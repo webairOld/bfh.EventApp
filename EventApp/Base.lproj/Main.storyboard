@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -76,10 +77,114 @@
             <point key="canvasLocation" x="1136" y="8"/>
         </scene>
         <!--Item-->
+        <scene sceneID="O8C-A0-htf">
+            <objects>
+                <viewController id="mTj-TG-5Xf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="teV-fc-EnW"/>
+                        <viewControllerLayoutGuide type="bottom" id="5cT-Cx-fyM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iPd-UJ-QV5">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6r-LN-sGJ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="368" id="hug-rU-eQj"/>
+                                    <constraint firstAttribute="height" constant="20" id="r5u-Pi-Oi5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hug-rU-eQj"/>
+                                        <exclude reference="r5u-Pi-Oi5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="hug-rU-eQj"/>
+                                        <include reference="r5u-Pi-Oi5"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="App Icons by http://www.icons8.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dnF-S5-pgk">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="pjl-Su-uBo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="uNT-db-HpM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pjl-Su-uBo"/>
+                                        <exclude reference="uNT-db-HpM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="pjl-Su-uBo"/>
+                                        <include reference="uNT-db-HpM"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="n6r-LN-sGJ" firstAttribute="leading" secondItem="iPd-UJ-QV5" secondAttribute="leadingMargin" id="9pp-xt-xfa"/>
+                            <constraint firstItem="dnF-S5-pgk" firstAttribute="leading" secondItem="iPd-UJ-QV5" secondAttribute="leadingMargin" id="IWI-d3-g7o"/>
+                            <constraint firstItem="n6r-LN-sGJ" firstAttribute="trailing" secondItem="iPd-UJ-QV5" secondAttribute="trailingMargin" id="O14-N9-gUq"/>
+                            <constraint firstItem="5cT-Cx-fyM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dnF-S5-pgk" secondAttribute="bottom" id="beg-vQ-2eP"/>
+                            <constraint firstItem="dnF-S5-pgk" firstAttribute="top" secondItem="n6r-LN-sGJ" secondAttribute="bottom" constant="8" id="dYa-sf-lFt"/>
+                            <constraint firstItem="n6r-LN-sGJ" firstAttribute="top" secondItem="teV-fc-EnW" secondAttribute="bottom" constant="10" id="xJK-p7-jFd"/>
+                            <constraint firstItem="dnF-S5-pgk" firstAttribute="trailing" secondItem="iPd-UJ-QV5" secondAttribute="trailingMargin" id="zU5-36-ZX4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="n6r-LN-sGJ"/>
+                                <exclude reference="dnF-S5-pgk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9pp-xt-xfa"/>
+                                <exclude reference="O14-N9-gUq"/>
+                                <exclude reference="xJK-p7-jFd"/>
+                                <exclude reference="IWI-d3-g7o"/>
+                                <exclude reference="dYa-sf-lFt"/>
+                                <exclude reference="zU5-36-ZX4"/>
+                                <exclude reference="beg-vQ-2eP"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="n6r-LN-sGJ"/>
+                                <include reference="dnF-S5-pgk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9pp-xt-xfa"/>
+                                <include reference="O14-N9-gUq"/>
+                                <include reference="xJK-p7-jFd"/>
+                                <include reference="IWI-d3-g7o"/>
+                                <include reference="dYa-sf-lFt"/>
+                                <include reference="zU5-36-ZX4"/>
+                                <include reference="beg-vQ-2eP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="tab-about" id="FmL-q7-j55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xti-i3-Rhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670.5" y="632"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="Oxp-81-zSG">
             <objects>
                 <navigationController id="sS3-ko-XY7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vxF-8j-xeB"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="tab-event" id="vxF-8j-xeB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QTF-Gl-M0B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -104,6 +209,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="sS3-ko-XY7" kind="relationship" relationship="viewControllers" id="e2g-Yo-n8c"/>
+                        <segue destination="mTj-TG-5Xf" kind="relationship" relationship="viewControllers" id="BVV-vm-DkZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -111,4 +217,8 @@
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab-about" width="25" height="25"/>
+        <image name="tab-event" width="25" height="25"/>
+    </resources>
 </document>
