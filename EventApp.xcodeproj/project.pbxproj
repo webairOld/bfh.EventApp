@@ -70,6 +70,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0306547D1AFCB11F00870705 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0306547E1AFCB11F00870705 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0306547E1AFCB11F00870705 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		030D46221AFCA7410055A830 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +97,7 @@
 		030D46231AFCA7510055A830 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0306547D1AFCB11F00870705 /* Core */,
 				030D46241AFCA7510055A830 /* UI */,
 			);
 			path = Classes;
