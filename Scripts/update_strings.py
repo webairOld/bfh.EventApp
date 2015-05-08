@@ -3,10 +3,11 @@ import os, sys
 import argparse
 import re
 from collections import OrderedDict
+import codecs
 
 parser = argparse.ArgumentParser(description='Update strings File for iOS & Mac OS X Projects based on genstrings. Supports Swift and Objective-C files.')
 parser.add_argument('localizable_file', metavar='Localizable.strings', help='Path to the project Localizable.strings file')
-parser.add_argument('-e', '--encoding', help='Encoding of the Localizable.strings file (Optional, default: \'utf16\')', required=False, default='utf16')
+parser.add_argument('-e', '--encoding', help='Encoding of the Localizable.strings file (Optional, default: \'utf8\')', required=False, default='utf8')
 parser.add_argument('-s', '--source', help='Path to Source files (Optional, default: \'.\')', required=False, default='.')
 parser.add_argument('-p', '--project', help='Project Name (Optional)', required=False, default='DefaultProject')
 args = parser.parse_args()
@@ -40,8 +41,8 @@ class LocalizableEntry(object):
 
 
 localized_entries = OrderedDict()
-def parse_localized_strings_file(path, initial=False):
-    file_content = open(path, "r").read().decode(LOCALIZABLE_FILE_ENCODING)
+def parse_localized_strings_file(path, initial=False, encoding=LOCALIZABLE_FILE_ENCODING):
+    file_content = open(path, "r").read().decode(encoding)
     results = PATTERN_LOCALIZED_ENTRY.findall(file_content)
     for r in results:
         #only update, ignore unused
@@ -50,10 +51,10 @@ def parse_localized_strings_file(path, initial=False):
         elif initial == True:
             localized_entries[r[1]] = LocalizableEntry(r[2], r[0])
 
-parse_localized_strings_file(temp_localized_strings, True)
+parse_localized_strings_file(temp_localized_strings, True, encoding="utf16")
 parse_localized_strings_file(LOCALIZABLE_FILE)
 
 #write to file
-output_file = open(LOCALIZABLE_FILE, "w")
+output_file = codecs.open(LOCALIZABLE_FILE, "w", encoding=LOCALIZABLE_FILE_ENCODING)
 for key, localized_entry in localized_entries.items():
-    output_file.write(localized_entry.str_with_key(key).encode(LOCALIZABLE_FILE_ENCODING))
+    output_file.write(localized_entry.str_with_key(key))
